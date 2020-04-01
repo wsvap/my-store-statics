@@ -9,6 +9,7 @@ import { ExchangesBarChartComponent } from './components/exchanges-bar-chart/exc
 import { ExchangesLineChartComponent } from './components/exchanges-line-chart/exchanges-line-chart.component';
 import { SalesChartComponent } from './components/sales-chart/sales-chart.component';
 import { VolumesChartComponent } from './components/volumes-chart/volumes-chart.component';
+import { VolumesPolarChartComponent } from './components/volumes-polar-chart/volumes-polar-chart.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { VolumesChartComponent } from './components/volumes-chart/volumes-chart.
     ExchangesBarChartComponent,
     ExchangesLineChartComponent,
     SalesChartComponent,
-    VolumesChartComponent
+    VolumesChartComponent,
+    VolumesPolarChartComponent
   ],
   imports: [
     BrowserModule,
