@@ -5,11 +5,11 @@ import { Label } from 'ng2-charts';
 import { ConstantsService } from '../../services/constants.service';
 
 @Component({
-  selector: 'app-exchanges-chart',
-  templateUrl: './exchanges-chart.component.html',
-  styleUrls: ['./exchanges-chart.component.scss']
+  selector: 'app-exchanges-bar-chart',
+  templateUrl: './exchanges-bar-chart.component.html',
+  styleUrls: ['./exchanges-bar-chart.component.scss']
 })
-export class ExchangesChartComponent implements OnInit {
+export class ExchangesBarChartComponent implements OnInit {
 
   constructor(private constant: ConstantsService) {
     this.exchanges = this.constant.exchangeData;
@@ -24,7 +24,6 @@ export class ExchangesChartComponent implements OnInit {
   barChartType: ChartType = 'bar';
   barChartLegend = true;
   barChartPlugins = [];
-
   barChartData: ChartDataSets[];
 
   ngOnInit(): void {
@@ -34,5 +33,4 @@ export class ExchangesChartComponent implements OnInit {
     ];
     this.barChartLabels = this.exchanges.map(exchange => exchange.id);
   }
-
 }

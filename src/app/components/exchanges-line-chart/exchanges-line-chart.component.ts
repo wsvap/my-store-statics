@@ -5,11 +5,11 @@ import { Color, Label } from 'ng2-charts';
 import { ConstantsService } from '../../services/constants.service';
 
 @Component({
-  selector: 'app-exchange-chart',
-  templateUrl: './exchange-chart.component.html',
-  styleUrls: ['./exchange-chart.component.scss']
+  selector: 'app-exchanges-line-chart',
+  templateUrl: './exchanges-line-chart.component.html',
+  styleUrls: ['./exchanges-line-chart.component.scss']
 })
-export class ExchangeChartComponent implements OnInit {
+export class ExchangesLineChartComponent implements OnInit {
 
   constructor(private constant: ConstantsService) {
     this.exchanges = this.constant.exchangeData;
@@ -17,25 +17,17 @@ export class ExchangeChartComponent implements OnInit {
 
   exchanges: any;
 
-  /*lineChartData: ChartDataSets[] = [
-    {data: [85, 72, 78, 75, 77, 75], label: 'Crude oil prices'},
-  ];*/
   lineChartData: ChartDataSets[];
-
-  // lineChartLabels: Label[] = ['January', 'February', 'March', 'April', 'May', 'June'];
   lineChartLabels: Label[];
-
   lineChartOptions = {
     responsive: true,
   };
-
   lineChartColors: Color[] = [
     {
       borderColor: 'black',
       backgroundColor: 'rgba(255,255,0,0.28)',
     },
   ];
-
   lineChartLegend = true;
   lineChartPlugins = [];
   lineChartType = 'line';
@@ -52,8 +44,5 @@ export class ExchangeChartComponent implements OnInit {
     this.lineChartData = [
       {data: lineChartDataPrices, label: lineChartDataLabel},
     ];
-
-
   }
-
 }
