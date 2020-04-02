@@ -24,8 +24,9 @@ export class ExchangesLineChartComponent implements OnInit {
   };
   lineChartColors: Color[] = [
     {
-      borderColor: 'black',
-      backgroundColor: 'rgba(255,255,0,0.28)',
+      borderColor: '#46bfbd',
+      backgroundColor: '#90d9d7',
+      borderWidth: 2
     },
   ];
   lineChartLegend = true;

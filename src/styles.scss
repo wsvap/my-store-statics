@@ -1,4 +1,76 @@
-
 @import "~bootstrap/dist/css/bootstrap.css";
+@import 'sass/bootstrap.min.css';
 
+html {
+  scroll-behavior: smooth;
+  background-color: #e9ebed;
+}
 
+body {
+  padding: 7em 0 4em;
+  background-color: #e9ebed;
+  @media (max-width: 576px) {
+    & {
+      padding: 7em 0 4em;
+    }
+  }
+}
+
+.scroll-to-top {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  width: 3rem;
+  height: 2.5rem;
+  overflow: hidden;
+  text-indent: -500px;
+  background-color: rgba(90, 92, 105, .2);
+  transition: background-color 0.2s;
+
+  &:hover {
+    background-color: rgba(90, 92, 105, .3);
+  }
+
+  &:before {
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    display: block;
+    content: '';
+    width: 1rem;
+    height: 1rem;
+    border: solid rgba(90, 92, 105, .7);
+    border-width: 0 3px 3px 0;
+    padding: 3px;
+    transform: rotate(-135deg);
+  }
+}
+
+.navbar.navbar-dark {
+  padding: 0.6rem;
+
+  .navbar-brand {
+    line-height: 40px;
+
+    img {
+      margin-right: 10px;
+    }
+  }
+
+  .navbar-text {
+    line-height: 36px;
+    color: rgba(256, 256, 256, 0.6) !important;
+    white-space: nowrap;
+    @media (max-width: 576px) {
+      & {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 1140px;
+  }
+}

@@ -7,8 +7,8 @@ import { ChartsModule } from 'ng2-charts';
 import { ConstantsService } from './services/constants.service';
 import { ExchangesBarChartComponent } from './components/exchanges-bar-chart/exchanges-bar-chart.component';
 import { ExchangesLineChartComponent } from './components/exchanges-line-chart/exchanges-line-chart.component';
-import { SalesChartComponent } from './components/sales-chart/sales-chart.component';
-import { VolumesChartComponent } from './components/volumes-chart/volumes-chart.component';
+import { SalesDoughnutChartComponent } from './components/sales-doughnut-chart/sales-doughnut-chart.component';
+import { VolumesPieChartComponent } from './components/volumes-pie-chart/volumes-pie-chart.component';
 import { VolumesPolarChartComponent } from './components/volumes-polar-chart/volumes-polar-chart.component';
 
 @NgModule({
@@ -16,8 +16,8 @@ import { VolumesPolarChartComponent } from './components/volumes-polar-chart/vol
     AppComponent,
     ExchangesBarChartComponent,
     ExchangesLineChartComponent,
-    SalesChartComponent,
-    VolumesChartComponent,
+    SalesDoughnutChartComponent,
+    VolumesPieChartComponent,
     VolumesPolarChartComponent
   ],
   imports: [

@@ -1,7 +1,5 @@
-<section id="sales-chart">
-  <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-    <h6 class="m-0 font-weight-bold text-primary">Sales Overview</h6>
-  </div>
+<div class="card border-primary shadow my-3 my-md-5">
+  <div class="card-header"><strong>Volumes Overview</strong> (pie chart)</div>
 
   <div class="card-body">
     <div class="chart-area">
@@ -15,12 +13,11 @@
       </div>
       <div class="chart-wrapper">
         <canvas baseChart
-                [data]="doughnutChartData"
-                [labels]="doughnutChartLabels"
-                [chartType]="doughnutChartType">
+                [data]="pieChartData"
+                [labels]="pieChartLabels"
+                [chartType]="pieChartType">
         </canvas>
       </div>
     </div>
   </div>
-
-</section>
+</div>

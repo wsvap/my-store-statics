@@ -1,15 +1,15 @@
 import { Component, OnInit } from '@angular/core';
-import { ChartType } from 'chart.js';
+import { ChartOptions, ChartType } from 'chart.js';
 import { MultiDataSet, Label } from 'ng2-charts';
 
 import { ConstantsService } from '../../services/constants.service';
 
 @Component({
-  selector: 'app-sales-chart',
-  templateUrl: './sales-chart.component.html',
-  styleUrls: ['./sales-chart.component.scss']
+  selector: 'app-sales-doughnut-chart',
+  templateUrl: './sales-doughnut-chart.component.html',
+  styleUrls: ['./sales-doughnut-chart.component.scss']
 })
-export class SalesChartComponent implements OnInit {
+export class SalesDoughnutChartComponent implements OnInit {
 
   constructor(private constant: ConstantsService) {
     this.sales = this.constant.salesData;
